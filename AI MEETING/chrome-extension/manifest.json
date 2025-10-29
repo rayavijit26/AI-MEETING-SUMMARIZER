@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "AI Meeting Summarizer",
+  "version": "1.0",
+  "description": "Capture and summarize meeting audio automatically",
+  "permissions": [
+  "microphone",
+  "activeTab",
+  "storage",
+  "tabCapture"
+],
+
+  "optional_permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "AI Meeting Summarizer"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://your-n8n-instance.com/*"
+  ]
+}
